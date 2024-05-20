@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #1f242d;
+  color: white;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 9%;
+  background-color: rgba(31, 36, 45, 0.8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 700;
+  cursor: default;
+  text-transform: uppercase;
+}
+
+.navbar a {
+  font-size: 1rem;
+  color: white;
+  margin-left: 4rem;
+  transition: 0.5s ease;
+}
+
+.navbar a:hover {
+  color: #00aaff;
+}
+
+#menu-icon {
+  font-size: 2rem;
+  color: white;
+  display: none;
+}
+
+section {
+  min-height: 100vh;
+  padding: 1rem 9% 2rem;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.home-img {
+  display: flex;
+  flex: 1;
+}
+
+.home-img img {
+  margin-left: auto;
+  min-width: 250px;
+  width: 35vw;
+}
+
+.home-content h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+span {
+  color: #00aaff;
+}
+
+.home-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 1rem;
+  background: transparent;
+  font-size: 2rem;
+  color: #00aaff;
+  margin: 3rem 1.5rem 3rem 0;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+
+.social-media a:hover {
+  color: white;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: #323946;
+}
+
+.heading {
+  text-align: center;
+  font-size: 4rem;
+  margin: 4rem;
+}
+
+.description {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.skill h2 {
+  margin-bottom: 5rem;
+}
+
+.skill-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.skill-container .skill-box {
+  flex: 1 1 30rem;
+  background-color: #323946;
+  padding: 3rem 2rem 4rem;
+  border-radius: 2rem;
+  text-align: center;
+  border: 0.2rem solid #1f242d;
+  transition: 0.5s ease;
+}
+
+.skill-container .skill-box:hover {
+  border-color: #00aaff;
+  transform: scale(1.02);
+}
+
+.skill-box i {
+  font-size: 7rem;
+  color: #00aaff;
+}
+
+.contact {
+  background-color: #323946;
+}
+
+.contact h2 {
+  margin-bottom: 3rem;
+}
+
+.contact form {
+  max-width: 50rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: white;
+  background: #1f242d;
+  border-radius: 0.8rem;
+  margin: 0.7rem 0;
+}
+
+.contact form .input-box input {
+  width: 49%;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+.btn {
+  padding: 0.8rem 2.5rem;
+  margin-block-start: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-color: #00aaff;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+
+.btn:hover {
+  border: 3px solid #00aaff;
+  color: #00aaff;
+  background-color: transparent;
+}
+
+.profile {
+  background-color: #323946;
+}
+
+.profile h2 {
+  margin-bottom: 5rem;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.profile-container .profile-box {
+  flex: 1 1 30rem;
+  background-color:  #1f242d;
+  padding: 3rem 2rem 4rem;
+  border-radius: 2rem;
+  text-align: center;
+  border: 0.2rem solid #323946;
+  transition: 0.5s ease;
+}
+
+.profile-box figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.profile-container .profile-box:hover {
+  border-color: #00aaff;
+  transform: scale(1.02);
+}
+
+.profile-box img {
+  width: 15vw;
+}
+
+.profile-box h3 {
+  padding: 10px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+footer {
+  background-color: #1f242d;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+  color: #00aaff;
+}
+
+footer .links {
+  margin-bottom: 1.4rem;
+}
+
+footer .links a {
+  color: #fff;
+  padding: 0.7rem 1rem;
+  text-decoration: none;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+}
+
+footer .credit a {
+  color: #00aaff;
+  font-weight: 700;
+}
+
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 1200px) {
+  html {
+    font-size: 75%;
+  }
+  .home-img img {
+    margin: auto;
+    min-width: 250px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 991px) {
+  .header {
+    padding: 2rem 3%;
+  }
+  section {
+    padding: 10rem 3% 2rem;
+  }
+  .skill {
+    padding-bottom: 2rem;
+  }
+  .contact {
+    min-height: auto;
+  }
+  footer {
+    padding: 2rem 3%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background-color: rgba(31, 36, 45, 0.8);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 2rem 0;
+  }
+
+  .home {
+    flex-direction: column;
+  }
+
+  .home-content h3 {
+    font-size: 2rem;
+  }
+
+  .home-content h1 {
+    font-size: 4rem;
+  }
+
+  .home-img img {
+    width: 40vw;
+    margin-top: 5rem;
+  }
+
+  .skill h2 {
+    margin-top: -3rem;
+  }
+  .profile-box img {
+    width: 20vw;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+  .contact form .input-box input {
+    width: 100%;
+  }
+  .home-img img {
+    width: 60vw;
+  }
+  .profile-box img {
+    width: 25vw;
+  }
+}
